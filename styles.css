@@ -14,9 +14,9 @@ header {
 }
 
 nav {
-    background-color: #007bff; /* Color de fondo */
+    background-color: #007bff; 
     padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -25,7 +25,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre elementos */
+    gap: 20px; 
 }
 
 nav ul li {
@@ -34,19 +34,19 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    background-color: #0056b3; /* Color de fondo de los botones */
+    background-color: #0056b3;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px 20px; 
+    border-radius: 8px; 
     font-weight: bold;
-    transition: all 0.3s ease-in-out; /* Efecto de transición suave */
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
     background: linear-gradient(135deg, #002147, #0056b3, #00a2ff); /* De azul oscuro a azul claro */
-    transform: scale(1.1); /* Efecto de crecimiento */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
 }
 
@@ -61,6 +61,45 @@ section {
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.loading {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #007bff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    form { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes dots {
+    0% {content: "En proceso";}
+    33% {content: "En proceso";}
+    66% {content: "En proceso";}
+    100% {content: "En proceso";}
+}
+
+#loading-text::after {
+    content: "En proceso";
+    animation: dots 1.5s infinite;
 }
 
 form {
@@ -96,4 +135,13 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+}
+
+#Estilo para las imagenes
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
 }
