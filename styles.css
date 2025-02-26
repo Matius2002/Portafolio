@@ -1,147 +1,163 @@
+/*Estilos generales del body*/
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Define la fuente principal del texto como Arial, y si no está disponible, usa cualquier fuente sans-serif */
+    margin: 0; /* Elimina los márgenes externos predeterminados del elemento */
+    padding: 0; /* Elimina el relleno interno predeterminado del elemento */
+    background-color: #f4f4f4; /* Establece un color de fondo gris claro para mejorar la apariencia visual y la legibilidad */
+    color: #333; /* Define el color del texto en un tono gris oscuro para un buen contraste sin ser demasiado agresivo */
 }
 
+/*Estilos para el header (encabezado)*/
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+    background-color: #007bff; /* Establece un color de fondo azul brillante para el elemento */
+    color: white; /* Cambia el color del texto a blanco para asegurar contraste y legibilidad */
+    padding: 15px 0; /* Agrega un espacio interno de 15px en la parte superior e inferior, sin afectar los lados */
+    text-align: center; /* Alinea el texto y los elementos hijos en el centro del contenedor */
 }
 
+/*Estilos para el nav (barra de navegación)*/
 nav {
-    background-color: #007bff; 
-    padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #007bff; /* Establece un color de fondo azul brillante para el elemento */
+    padding: 15px 0; /* Agrega un espacio interno de 15px en la parte superior e inferior, sin afectar los lados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra con un desenfoque de 8px y una opacidad del 20%, creando un efecto elevado */
 }
 
+/*Estilos de la lista dentro del nav*/
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
+    list-style: none; /* Elimina los estilos predeterminados de la lista, como los puntos o números */
+    padding: 0; /* Elimina el relleno interno de la lista para que no tenga espacios adicionales */
+    margin: 0; /* Elimina el margen externo de la lista para que no afecte el diseño */
+    display: flex; /* Convierte la lista en un contenedor flexible, permitiendo controlar la distribución de sus elementos */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente dentro de su contenedor */
+    gap: 20px; /* Agrega un espacio de 20px entre cada elemento de la lista */
 }
 
+/*Estilos de los elementos <li> del nav*/
 nav ul li {
-    display: inline;
+    display: inline; /* Hace que el elemento se comporte como un elemento en línea, es decir, no inicia en una nueva línea y solo ocupa el ancho necesario según su contenido. */
 }
 
+/*Estilos de los enlaces del nav*/
 nav ul li a {
-    display: inline-block;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px; 
-    border-radius: 8px; 
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Hace que el elemento se comporte como un bloque en línea, permitiendo definir ancho, alto y márgenes sin ocupar toda la línea */
+    background-color: #0056b3; /* Establece un fondo azul oscuro para el elemento */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    text-decoration: none; /* Elimina cualquier subrayado en los enlaces */
+    padding: 10px 20px; /* Agrega un espacio interno de 10px arriba/abajo y 20px a los lados para mejorar la legibilidad */
+    border-radius: 8px; /* Redondea las esquinas del elemento con un radio de 8px, dándole un aspecto más moderno */
+    font-weight: bold; /* Hace que el texto sea más grueso (negrita) */
+    transition: all 0.3s ease-in-out; /* Aplica una transición suave de 0.3 segundos a todos los cambios de estilo, creando un efecto animado */
 }
 
+/*Efeccto hover en los enlaces del nav*/
 nav ul li a:hover {
-    background: linear-gradient(135deg, #002147, #0056b3, #00a2ff); /* De azul oscuro a azul claro */
-    transform: scale(1.1); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #002147, #0056b3, #00a2ff); /* Aplica un fondo con un degradado que va desde un azul oscuro (#002147) hasta un azul claro (#00a2ff) en un ángulo de 135 grados */
+    transform: scale(1.1); /* Aumenta el tamaño del elemento en un 10% al hacer hover, creando un efecto de agrandamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra alrededor del elemento para darle profundidad */
+    transition: all 0.3s ease-in-out; /* Suaviza todos los cambios de estilo en 0.3 segundos, creando una animación fluida */
 }
 
+/*Estilos generales de section*/
 section {
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Agrega un espacio interno de 20px alrededor del contenido */
+    text-align: center; /* Centra el texto y los elementos en línea dentro del contenedor */
 }
 
+/*Estilos de las tarjetas de proyectos (.project)*/
 .project {
-    background-color: white;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-    text-align: center;
+    background-color: white; /* Establece el fondo en color blanco */
+    padding: 15px; /* Agrega un espacio interno de 15px alrededor del contenido */
+    margin: 10px; /* Agrega un margen externo de 10px alrededor del elemento */
+    border-radius: 5px; /* Redondea las esquinas del elemento con un radio de 5px */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Agrega una sombra sutil debajo del elemento para darle profundidad */
+    position: relative; /* Permite posicionar el elemento en relación con su posición normal */
+    text-align: center; /* Centra el texto dentro del elemento */
 }
 
+/*Estilos para imágenes dentro de .project*/
 .project img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 8px;
+    max-width: 100%; /* Asegura que el elemento no supere el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original ajustando la altura automáticamente */
+    display: block; /* Hace que el elemento se comporte como un bloque, evitando espacios extras debajo */
+    margin: auto; /* Centra el elemento horizontalmente dentro de su contenedor */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarla */
+    border-radius: 8px; /* Redondea las esquinas del elemento con un radio de 8px */
 }
 
+/*Animación de carga (.loading)*/
 .loading {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 5px solid #007bff;
-    border-top-color: transparent;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-top: 10px;
+    display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
+    width: 40px; /* Establece un ancho fijo de 40px */
+    height: 40px; /* Establece una altura fija de 40px */
+    border: 5px solid #007bff; /* Aplica un borde sólido de 5px con color azul */
+    border-top-color: transparent; /* Hace que la parte superior del borde sea transparente (creando un efecto de carga) */
+    border-radius: 50%; /* Convierte el elemento en un círculo perfecto */
+    animation: spin 1s linear infinite; /* Aplica la animación "spin" con duración de 1s, movimiento uniforme y repetición infinita */
+    margin-top: 10px; /* Agrega un margen superior de 10px para separar el elemento de los demás */
 }
 
+/*Definición de la animación spin*/
 @keyframes spin {
-    form { transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    form { transform: rotate(0deg);} /* Inicia la animación sin rotación (0 grados) */
+    to {transform: rotate(360deg);} /* Gira el elemento completamente (360 grados) al finalizar la animación */
 }
 
+/*Animación de texto de carga (#loading-text)*/
 @keyframes dots {
-    0% {content: "En proceso";}
-    33% {content: "En proceso";}
-    66% {content: "En proceso";}
-    100% {content: "En proceso";}
+    0% {content: "En proceso";} /* En el inicio de la animación, el contenido es "En proceso" */
+    33% {content: "En proceso";} /* A un 33% de la animación, el contenido sigue siendo "En proceso" */
+    66% {content: "En proceso";} /* A un 66% de la animación, el contenido sigue sin cambios */
+    100% {content: "En proceso";} /* Al finalizar la animación, el contenido sigue igual */
 }
 
 #loading-text::after {
-    content: "En proceso";
-    animation: dots 1.5s infinite;
+    content: "En proceso"; /* Define el texto inicial que se mostrará en el pseudo-elemento */
+    animation: dots 1.5s infinite; /* Aplica la animación "dots" que dura 1.5 segundos y se repite infinitamente */
 }
 
+/*Estilos para formularios*/
 form {
-    max-width: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    max-width: 400px; /* Limita el ancho máximo del elemento a 400px */
+    margin: auto; /* Centra el elemento horizontalmente dentro de su contenedor */
+    display: flex; /* Aplica el modelo de caja flexible para organizar los elementos internos */
+    flex-direction: column; /* Organiza los elementos internos en una columna (uno debajo del otro) */
+    gap: 10px; /* Agrega un espacio de 10px entre los elementos internos */
 }
 
+/*Estilos para los campos de entrada y botones*/
 input, textarea, button {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido */
+    border: 1px solid #ddd; /* Establece un borde sólido de 1px con color gris claro */
+    border-radius: 5px; /* Redondea las esquinas del elemento con un radio de 5px */
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #007bff; /* Establece un color de fondo azul brillante */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    border: none; /* Elimina el borde del elemento */
+    cursor: pointer; /* Cambia el cursor a una mano (👆) para indicar que es clickeable */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Establece un color de fondo azul oscuro */
 }
 
+/*Estilos para el footer*/
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    text-align: center; /* Centra el texto dentro del elemento */
+    padding: 10px; /* Agrega un espacio interno de 10px alrededor del contenido */
+    background-color: #007bff; /* Establece un color de fondo azul */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    position: relative; /* Mantiene la posición relativa respecto a su contenedor padre */
+    width: 100%; /* Hace que el elemento ocupe todo el ancho disponible */
+    bottom: 0; /* Asegura que el elemento esté en la parte inferior de su contenedor */
 }
 
-#Estilo para las imagenes
+/*Estilos para las imagenes*/
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen al cambiar el ancho */
+    display: block; /* Evita que la imagen tenga espacio adicional debajo (comportamiento de línea) */
+    margin: auto; /* Centra la imagen horizontalmente dentro de su contenedor */
+    margin-bottom: 10px; /* Agrega un espacio de 10px debajo de la imagen */
 }
